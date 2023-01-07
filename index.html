@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>form</title>
+</head>
+<body>
+  <main>
+    <div class="form-holdel">
+      <form class="form">
+        <div class="form-group">
+          <div class="form-group-input">
+            <div class="col">
+              <label for="fullname">Повне ім'я:</label>
+            </div>
+            <div class="col">
+              <input id="fullname" type="text" required>
+            </div>
+          </div>
+          <div class="form-group-input">
+            <div class="col">
+              <label for="email">Email</label>
+            </div>
+            <div class="col">
+              <input id="email" type="email" required>
+            </div>
+          </div>
+          <div class="form-group-input">
+            <div class="col">
+              <label for="pass">Пароль</label>
+            </div>
+            <div class="col">
+              <input id="pass" type="password" required>
+            </div>
+          </div>
+          <div class="form-group-input">
+            <div class="col">
+              <label for="pass2">Пароль ще раз</label>
+            </div>
+            <div class="col">
+              <input id="pass2" type="password" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-radio">
+            <div class="col">
+              <p>Стать:</p>
+            </div>
+            <div class="col">
+              <input type="radio" id="male"
+                     name="sex" value="male">
+              <label for="male">Чоловік</label>
+              <input class="form-input" type="radio" id="female"
+                     name="sex" value="female">
+              <label for="female">Жінка</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-age">
+            <div class="col">
+              <label for="age">Вік:</label>
+            </div>
+            <div class="col">
+              <input id="age" type="number">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-select">
+            <div class="col">
+              <label for="course">Курс:</label>
+            </div>
+            <div class="col">
+              <select class="form-input form-input-select" name="course" id="course">
+                <option>-=Віберите курс =-</option>
+                <option value="front">Front</option>
+                <option value="back">Back</option>
+                <option value="qa">QA</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-textaria">
+            <div class="col">
+              <label for="fulladdress">Повна адреса:</label>
+            </div>
+            <div class="col">
+              <textarea id="fulladdress" name="fulladdress" rows="4" cols="18" placeholder="Країна,регіон,місто,селище,вулиця"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-check">
+            <input id="check" type="checkbox">
+            <label for="check">Я погоджуюсь з обробкою персональний даних</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-button">
+            <div class="button-reset">
+              <button type="reset">Очистити форму</button>
+            </div>
+            <div class="button-submite">
+              <button type="submit">Зареєструватися</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
